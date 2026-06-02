@@ -27,6 +27,7 @@ Repositori ini berisi rangkaian proyek analisis data (*Data Mining*) menggunakan
 *Silakan klik judul file `.ipynb` di atas untuk melihat kode lengkap dan visualisasi grafiknya.*
 *dan analisis ini menggunakan dataset publik Mall_Customers.csv yang bersumber dari Kaggle.*
 
+---
 # E-Commerce Digital Product Sales Analysis
 **Tujuan:** menganalisis performa penjualan produk digital (E-Book, Video Course, Template) selama 4 bulan pertama di tahun 2026. Analisis ini difokuskan pada penemuan tren penjualan, produk paling menguntungkan, dan efektivitas platform distribusi untuk mengoptimalkan strategi marketing ke depannya.
 

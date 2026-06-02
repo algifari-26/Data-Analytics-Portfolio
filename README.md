@@ -28,8 +28,8 @@ Repositori ini berisi rangkaian proyek analisis data (*Data Mining*) menggunakan
 *dan analisis ini menggunakan dataset publik Mall_Customers.csv yang bersumber dari Kaggle.*
 
 # E-Commerce Digital Product Sales Analysis
-* **Tujuan:** menganalisis performa penjualan produk digital (E-Book, Video Course, Template) selama 4 bulan pertama di tahun 2026. Analisis ini difokuskan pada penemuan tren penjualan, produk paling menguntungkan, dan efektivitas platform distribusi untuk mengoptimalkan strategi marketing ke depannya.
-* 💡 Business Insights (Temuan Data)
+**Tujuan:** menganalisis performa penjualan produk digital (E-Book, Video Course, Template) selama 4 bulan pertama di tahun 2026. Analisis ini difokuskan pada penemuan tren penjualan, produk paling menguntungkan, dan efektivitas platform distribusi untuk mengoptimalkan strategi marketing ke depannya.
+💡 Business Insights (Temuan Data)
 Berdasarkan dashboard yang telah dibangun, ditemukan 3 wawasan bisnis utama:
 
 Produk Bintang (Star Product): Video Course UI/UX mendominasi penjualan sebagai penyumbang omset terbesar (lebih dari Rp 120 Juta). Hal ini menunjukkan tingginya minat audiens terhadap pembelajaran desain interaktif.

@@ -31,4 +31,4 @@ Kumpulan proyek yang berfokus pada *Data Storytelling* dan pembuatan metrik bisn
 
 ---
 **📫 Hubungi Saya:**
-*(Tambahkan link LinkedIn atau Email milikmu di sini)*
+*algifarim413@gmail.com*

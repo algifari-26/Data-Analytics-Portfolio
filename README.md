@@ -27,20 +27,3 @@ Repositori ini berisi rangkaian proyek analisis data (*Data Mining*) menggunakan
 *Silakan klik judul file `.ipynb` di atas untuk melihat kode lengkap dan visualisasi grafiknya.*
 *dan analisis ini menggunakan dataset publik Mall_Customers.csv yang bersumber dari Kaggle.*
 
----
-# E-Commerce Digital Product Sales Analysis
-**Tujuan:** menganalisis performa penjualan produk digital (E-Book, Video Course, Template) selama 4 bulan pertama di tahun 2026. Analisis ini difokuskan pada penemuan tren penjualan, produk paling menguntungkan, dan efektivitas platform distribusi untuk mengoptimalkan strategi marketing ke depannya.
-
-💡 Business Insights (Temuan Data)
-Berdasarkan dashboard yang telah dibangun, ditemukan 3 wawasan bisnis utama:
-
-1. Produk Bintang (Star Product): Video Course UI/UX mendominasi penjualan sebagai penyumbang omset terbesar (lebih dari Rp 120 Juta). Hal ini menunjukkan tingginya minat audiens terhadap pembelajaran desain interaktif.
-
-2. Persaingan Platform: Platform WhatsApp (Rp 66,3 Juta) dan TikTok (Rp 64,4 Juta) bersaing sangat ketat di posisi teratas. Ini membuktikan bahwa strategi Direct Selling (WhatsApp) sama efektifnya dengan keranjang kuning Social Commerce (TikTok).
-
-3. Anomali Tren Penjualan: Terdapat penurunan drastis pada grafik garis di bulan Mei. Setelah ditelusuri, hal ini terjadi karena data bulan Mei belum terkumpul secara penuh (inkomplit), bukan karena penurunan minat pembeli yang sesungguhnya.
-
-🚀 Rekomendasi Bisnis
-1. Alokasi Budget Marketing: Kurangi biaya iklan di platform yang kurang optimal dan fokuskan 80% anggaran promosi (ads) pada TikTok dan WhatsApp.
-
-2. Bundling Product: Karena Course UI/UX sangat diminati, buat promo bundling dengan produk yang omsetnya lebih rendah (seperti Template Canva) untuk mendongkrak penjualan produk tersebut.

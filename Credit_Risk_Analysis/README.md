@@ -1,7 +1,7 @@
 # 📈 Credit Risk Analysis & Approval Dashboard
 
 *(Tampilan Interaktif Dashboard)*
-![Dashboard Credit Risk](Executive Credit Risk & Approval Dashboard.png) 
+![Dashboard Credit Risk](Executive%20Credit%20Risk%20&%20Approval%20Dashboard.png) 
 
 ---
 

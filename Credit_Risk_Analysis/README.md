@@ -1,35 +1,40 @@
-#  Credit Risk Analysis & Approval Dashboard
+# 📈 Credit Risk Analysis & Approval Dashboard
 
-##  Deskripsi Proyek
-Proyek ini merupakan simulasi end-to-end analisis risiko kredit perbankan. Tujuannya adalah untuk memproses data mentah pengajuan kredit nasabah yang kotor dan tidak terstruktur, membersihkannya, lalu membangun *dashboard* interaktif guna membantu tim manajemen risiko (*Risk Management*) dalam mengambil keputusan persetujuan kredit berdasarkan profil nasabah.
+*(Tampilan Interaktif Dashboard)*
+![Dashboard Credit Risk](Executive Credit Risk & Approval Dashboard.png) 
 
-##  Tools yang Digunakan
-* **Microsoft Excel:** Data Cleaning, Data Imputation, Formatting.
-* **Tableau Public:** Data Visualization, Dashboarding, Business Intelligence.
+---
 
-##  Proses Data Cleaning (Excel)
-Sebelum divisualisasikan, dataset mentah melalui proses pembersihan ekstrem karena mengandung berbagai anomali:
-1. **Standardisasi Format Tanggal:** Memperbaiki format tanggal yang bertabrakan (campuran format ID, US, dan teks huruf) menggunakan kombinasi *Find & Replace* dan *Text to Columns*.
-2. **Penanganan Missing Values (Imputasi):** * Mengisi data usia yang kosong/outlier (seperti angka minus) menggunakan nilai *Median/Mean* dari populasi normal.
-   * Mengisi kekosongan data Skor Kredit dan Tenor dengan nilai standar (default) industri.
-3. **Pembersihan Teks & Karakter Bebas:** Menghapus simbol mata uang ("Rp") dan spasi ekstra pada kolom finansial, serta menyeragamkan ejaan status kredit menggunakan fungsi `TRIM` dan `UPPER`.
+## 📝 Latar Belakang Proyek
+Proyek ini bertujuan untuk menganalisis dan memitigasi risiko dari data pengajuan kredit nasabah perbankan. Analisis ini difokuskan pada penemuan pola risiko berdasarkan demografi nasabah (usia dan pekerjaan) serta rasio finansial (gaji dan plafon pinjaman) guna membantu tim *Risk Management* merumuskan kebijakan persetujuan kredit yang lebih aman dan digerakkan oleh data (*data-driven*).
 
-##  Dashboard & Visualisasi
-*Dashboard* interaktif ini dirancang untuk menampilkan KPI utama dan metrik risiko.
-**( [Klik di sini untuk melihat Dashboard interaktif di Tableau Public] - *Executive Credit Risk & Approval Dashboard.png*)**
+## 🗂️ Sumber Data
+> **Catatan Portofolio:** Analisis ini menggunakan *dataset* pengajuan kredit yang pada awalnya berantakan (*dirty data*). Data tersebut memuat metrik seperti Gaji Bulanan, Plafon Pinjaman, Usia, Pekerjaan, dan Skor Kredit. Data telah melalui tahap *Data Cleaning* yang ekstrem (Imputasi *Missing Values*, perbaikan format mata uang/tanggal, dan pembersihan teks spasi) sebelum divisualisasikan.
 
-##  Business Insights (Temuan Analisis)
-Berdasarkan *dashboard* yang telah dibangun, berikut adalah rekomendasi dan wawasan bisnis yang ditemukan:
+## 🛠️ Tools yang Digunakan
+* **Microsoft Excel:** *Data Cleaning, Data Imputation (Mean/Median), Standardisasi Format.*
+* **Tableau Public:** *Data Visualization, Calculated Fields* (Pembuatan metrik *Approval Rate*), *Parameter Bins* (Distribusi Usia), dan *Dashboard Layouting*.
 
-1. **Tingkat Persetujuan (Approval Rate):** Dari total pengajuan yang masuk bulan ini, tingkat persetujuan berada di kisaran **47,3%**. Ini menunjukkan bank menerapkan filter risiko yang cukup ketat dalam meloloskan plafon pinjaman.
-2. **Profil Risiko Berdasarkan Pekerjaan:**
-   * **Risiko Tinggi:** Kategori *Freelance* dan Pegawai Negeri Sipil (PNS) menunjukkan *Reject Rate* (tingkat penolakan) tertinggi pada periode ini.
-   * **Risiko Rendah:** Kategori Wirausaha mendominasi pengajuan yang disetujui (Approved), menjadikannya segmen pasar yang paling potensial saat ini.
-3. **Korelasi Gaji dan Plafon Pinjaman:**
-   Berdasarkan grafik *Scatter Plot*, terdapat korelasi positif yang sehat; nasabah dengan gaji lebih tinggi diberikan plafon yang lebih besar. Sebagian besar penolakan (titik merah) terkonsentrasi pada nasabah dengan gaji di bawah Rp 20 Juta yang mengajukan plafon pinjaman terlalu tinggi (tidak sebanding dengan rasio pendapatan).
-4. **Demografi Usia Nasabah:**
-   Pasar terbesar pengajuan kredit berada pada rentang **usia 30-39 tahun**. Namun, bank perlu lebih berhati-hati dalam menyalurkan kredit kepada nasabah di usia 20-an (20-29 tahun), karena kelompok demografi ini menunjukkan rasio penolakan yang paling tinggi dibandingkan kelompok usia yang lebih matang.
+---
+
+## 💡 Business Insights (Temuan Data)
+Dari *dashboard* yang telah dibangun, ditemukan 4 pola utama terkait profil risiko nasabah:
+
+1. **⚖️ Filter Risiko Ketat (Approval Rate):** Tingkat persetujuan kredit (*Approval Rate*) berada di angka **47,37%**. Hal ini mengindikasikan bahwa bank telah menerapkan filter kelayakan yang cukup ketat dalam menyaring profil nasabah.
+   
+2. **🏢 Profil Risiko Pekerjaan:** Kelompok profesi **PNS dan Freelance** menunjukkan tingkat penolakan (*Reject Rate*) yang paling tinggi. Sebaliknya, nasabah dengan profesi **Wirausaha** menjadi penyumbang persetujuan kredit (*Approved*) terbanyak, menjadikannya segmen yang paling sehat bulan ini.
+   
+3. **💰 Korelasi Gaji vs Plafon:** Terdapat korelasi positif antara pendapatan dan jumlah pinjaman. Namun, nasabah dengan gaji di bawah **Rp 20 Juta** yang mencoba meminjam plafon terlampau tinggi cenderung langsung masuk ke dalam kategori *Rejected* (merah).
+   
+4. **📊 Demografi Usia Berisiko:** Pasar terbesar peminjam berada pada rentang **usia 30-39 tahun**. Meskipun demikian, kelompok nasabah muda (usia **20-29 tahun**) menunjukkan rasio penolakan tertinggi dibandingkan demografi usia yang lebih matang.
+
+---
+
+## 🚀 Rekomendasi Tindakan (*Actionable Plan*)
+* **Penyesuaian Batas Plafon (*Cap Limit*):** Terapkan aturan batas maksimal pinjaman yang lebih ketat atau penambahan syarat agunan untuk nasabah dengan rentang gaji di bawah Rp 20 Juta guna menekan angka gagal bayar.
+* **Fokus Pemasaran Segmen Wirausaha:** Alokasikan anggaran *marketing* untuk membuat promo atau program bunga khusus yang menargetkan kelompok Wirausaha, mengingat kelompok ini memiliki rekam jejak persetujuan terbaik.
+* **Verifikasi Ketat Usia Muda:** Terapkan proses *screening* atau verifikasi tambahan untuk pendaftar di usia awal 20-an, atau berikan batas tenor dan plafon awal yang lebih rendah untuk membangun skor kredit mereka secara bertahap.
 
 ---
 **Author:**
-Muhammad Al Gifari  
+Muhammad Al Gifari

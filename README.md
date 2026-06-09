@@ -29,6 +29,12 @@ Kumpulan proyek yang berfokus pada *Data Storytelling* dan pembuatan metrik bisn
   * **Format Utama:** *Dashboard Image* (`.png`) & Laporan Bisnis
   * **Tools:** Tableau Public.
 
+* **[3. Executive Credit Risk](./Credit_Risk_Analysis)**
+  * **Deskripsi:** Analisis penemuan pola risiko berdasarkan demografi nasabah (usia dan pekerjaan) serta rasio finansial (gaji dan plafon pinjaman) guna membantu tim Risk Management merumuskan kebijakan persetujuan kredit yang lebih aman.
+  * **Format Utama:** *Dashboard Image* (`.png`) & Laporan Bisnis
+  * **Tools:** Tableau Public.
+
+
 ---
 **📫 Hubungi Saya:**
 *algifarim413@gmail.com*
